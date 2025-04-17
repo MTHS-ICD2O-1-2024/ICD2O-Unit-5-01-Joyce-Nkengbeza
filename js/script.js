@@ -4,19 +4,22 @@
 // Created on: Mar 2025
 // This file contains the JS functions for index.html
 
-"use strict"
+const randomNumber = Math.floor(Math.random() * 6) + 1;
 
-function calculatearea() {
+function check() {
   // input
-  const abase = parseInt(document.getElementById('a-base').value);
-  const bbase = parseInt(document.getElementById('b-base').value);
-  const height = parseInt(document.getElementById('height-length').value);
+  const usernumber = parseInt(document.getElementById('number').value);
     
 
   // process
-    const trapezoidarea = [(abase + bbase) / 2] * height
+    if (usernumber === randomNumber) {
 
   // output
-  document.getElementById('area').innerHTML = 'area is:' + trapezoidarea + 'mm²'
-}
-
+  document.getElementById('pickANumber').innerHTML = '<p>You have guessed the correct number!</p>'
+    }
+    
+    if (usernumber !== randomNumber) {
+    document.getElementById('pickANumber').innerHTML = '<p>You have guessed the wrong Number!</p>'
+    '<br/>The Correct number was:' + randomNumber + '</p>'
+    }
+  }

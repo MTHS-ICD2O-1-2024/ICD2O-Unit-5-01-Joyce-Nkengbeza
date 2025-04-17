@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit3-01-HTML-MDL -->
+<!-- ICS2O-Unit5-01-HTML-MDL -->
 <html lang="en-ca">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area Of Trapezoid With JS" />
+  <meta name="description" content="Random Number Guess, JS" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Joyce Nkengbeza" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32new.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16new.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Area of Trapezoid in JS</title>
+  <title>Random Number Guess, JS</title>
 </head>
 
 <body>
@@ -24,48 +24,31 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area of Trapezoid in JS</span>
+        <span class="mdl-layout-title">Random Number Guess, JS</span>
       </div>
     </header>
     <main class="mdl-layout__content">
-      <div class="page-content">Area of Trapezoid in JS</div>
-      <img src="./images/trapezoid.svg" />
-      <h3>Formula</h3>
-      <div class="page-content"><h2>A = [(a + b) / 2] x h</h2></div>
-      <div class="page-content">Please enter integers for dimensions</div>
+      <div class="page-content">Random Number Guess, JS</div>
+      <img src="./images/dice.gif"/>
       <br />
       <form>
         <!-- Numeric Textfield -->
-        <p>A Base:</p>
+        <p>Number:</p>
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="a-base" /> <span>mm</span>
-          <!-- class "mdl-textfield__error" -->
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-        <!-- Numeric Textfield -->
-        <p>B Base:</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="b-base" /> <span>mm</span>
-          <!-- class "mdl-textfield__error" -->
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-        <!-- Numeric Textfield -->
-        <p>Height:</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height-length" /> <span>mm</span>
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number" />
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <br />
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculatearea()" type="button">
+          onclick="check()" type="button">
           Calculate
         </button>
       </form>
       <br />
       <div class="page-content-answer">
-        <div id="area"></div>
+        <div id="pickANumber"></div>
       </div>
     </main>
   </div>
