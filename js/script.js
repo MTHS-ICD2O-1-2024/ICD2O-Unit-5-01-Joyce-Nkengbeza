@@ -19,7 +19,8 @@ function check() {
     }
     
     if (usernumber !== randomNumber) {
-    document.getElementById('pickANumber').innerHTML = '<p>You have guessed the wrong Number!</p>'
+    document.getElementById('pickANumber').innerHTML = 
+    '<p>You have guessed the wrong Number!' +
     '<br/>The Correct number was:' + randomNumber + '</p>'
     }
   }
